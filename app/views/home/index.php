@@ -43,51 +43,17 @@
   <div class="container py-4">
     <h2 class="fw-bold">Ayo Belajar!</h2>
     <div class="grid mt-4 align-items-start">
-      <div class="g-col-12 g-col-md-6 g-col-lg-4 g-col-xl-3 rounded-3 bg-white overflow-hidden">
-        <a href="" class="text-decoration-none text-dark d-flex flex-column align-items-center">
-          <img src="<?= BASEURL ?>/img/math-card2.jpg" alt="" class="w-100 d-block" style="max-height:13em;object-fit:cover">
-          <div class="d-block p-3 mt-2">
-            <h5 class="fw-bold">Belajar Perkalian Cepat Menggunakan Tangan</h5>
-            <p class="text-muted fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores distinctio non.</p>
-          </div>
-        </a>
-      </div>
-      <div class="g-col-12 g-col-md-6 g-col-lg-4 g-col-xl-3 rounded-3 bg-white overflow-hidden">
-        <a href="" class="text-decoration-none text-dark d-flex flex-column align-items-center">
-          <img src="<?= BASEURL ?>/img/math-card3.jpg" alt="" class="w-100 d-block" style="max-height:13em;object-fit:cover">
-          <div class="d-block p-3 mt-2">
-            <h5 class="fw-bold">Belajar Perkalian Cepat Menggunakan Tangan</h5>
-            <p class="text-muted fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores distinctio non.</p>
-          </div>
-        </a>
-      </div>
-      <div class="g-col-12 g-col-md-6 g-col-lg-4 g-col-xl-3 rounded-3 bg-white overflow-hidden">
-        <a href="" class="text-decoration-none text-dark d-flex flex-column align-items-center">
-          <img src="<?= BASEURL ?>/img/math-card4.jpg" alt="" class="w-100 d-block" style="max-height:13em;object-fit:cover">
-          <div class="d-block p-3 mt-2">
-            <h5 class="fw-bold">Belajar Perkalian Cepat Menggunakan Tangan</h5>
-            <p class="text-muted fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores distinctio non.</p>
-          </div>
-        </a>
-      </div>
-      <div class="g-col-12 g-col-md-6 g-col-lg-4 g-col-xl-3 rounded-3 bg-white overflow-hidden">
-        <a href="" class="text-decoration-none text-dark d-flex flex-column align-items-center">
-          <img src="<?= BASEURL ?>/img/math-card3.jpg" alt="" class="w-100 d-block" style="max-height:13em;object-fit:cover">
-          <div class="d-block p-3 mt-2">
-            <h5 class="fw-bold">Belajar Perkalian Cepat Menggunakan Tangan</h5>
-            <p class="text-muted fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores distinctio non.</p>
-          </div>
-        </a>
-      </div>
-      <div class="g-col-12 g-col-md-6 g-col-lg-4 g-col-xl-3 rounded-3 bg-white overflow-hidden">
-        <a href="" class="text-decoration-none text-dark d-flex flex-column align-items-center">
-          <img src="<?= BASEURL ?>/img/math-card2.jpg" alt="" class="w-100 d-block" style="max-height:13em;object-fit:cover">
-          <div class="d-block p-3 mt-2">
-            <h5 class="fw-bold">Belajar Perkalian Cepat Menggunakan Tangan</h5>
-            <p class="text-muted fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores distinctio non.</p>
-          </div>
-        </a>
-      </div>
+        <?php foreach($data['belajar'] as $learn) :?>
+        <div class="g-col-12 g-col-md-3 rounded-3 overflow-hidden bg-white">
+            <a href="<?= BASEURL ?>/belajar/al/<?= $learn['slug'] ?>" class="text-decoration-none text-dark d-flex flex-column align-items-center">
+            <img src="<?= BASEURL ?>/<?= $learn['thumbnail'] ?>" alt="" class="w-100 d-block" style="max-height:13em;object-fit:cover">
+            <div class="d-block p-3 px-4 mt-2 w-100">
+                <h5 class="fw-bold"><?= $learn['title'] ?></h5>
+                <p class="text-muted fs-6"><?= $learn['excerpt'] ?></p>
+            </div>
+            </a>
+        </div>
+        <?php endforeach; ?>
     </div>
   </div>
 </section>

@@ -30,6 +30,14 @@ class BaseModel{
         return $this->db->resultSet();
     }
 
+    public function getOrderByLimit($key,$limit)
+    {
+        $query = "SELECT * FROM ". $this->table . " ORDER BY ". $key . " DESC LIMIT :limit";
+        $this->db->query($query);
+        $this->db->bind('limit',$limit);
+        return $this->db->resultSet();
+    }
+
     public function search($keyword)
     {
         $query = "SELECT * FROM ". $this->table ." WHERE nama LIKE :keyword";
