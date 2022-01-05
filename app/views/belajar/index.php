@@ -3,7 +3,7 @@
         <h2 class="fw-bold">Ayo Belajar!</h2>
         <div class="grid mt-4 align-items-start">
             <?php foreach($data['belajar'] as $learn) :?>
-            <div class="g-col-12 g-col-md-3 rounded-3 overflow-hidden bg-white">
+            <div class="g-col-12 g-col-md-4 g-col-lg-3 rounded-3 overflow-hidden bg-white">
                 <a href="<?= BASEURL ?>/belajar/al/<?= $learn['slug'] ?>" class="text-decoration-none text-dark d-flex flex-column align-items-center">
                 <img src="<?= BASEURL ?>/<?= $learn['thumbnail'] ?>" alt="" class="w-100 d-block" style="max-height:13em;object-fit:cover">
                 <div class="d-block p-3 px-4 mt-2 w-100">

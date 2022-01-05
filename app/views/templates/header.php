@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title><?= $data['judul']; ?></title>
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css?v=1">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/custom.css">
     <link rel="shortcut icon" href="<?= BASEURL; ?>/img/faviconn.png" type="image/x-icon">
 </head>
