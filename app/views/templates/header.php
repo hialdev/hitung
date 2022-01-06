@@ -1,11 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title><?= $data['judul']; ?></title>
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css?v=1">
+    
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/custom.css">
-    <link rel="shortcut icon" href="<?= BASEURL; ?>/img/faviconn.png" type="image/x-icon">
+    <link rel="icon" href="<?= BASEURL; ?>/img/faviconn.png?v=1" type="image/x-icon">
 </head>
 <body style="background-color: #f7f7f7;">
 
