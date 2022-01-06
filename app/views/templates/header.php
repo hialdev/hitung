@@ -8,7 +8,7 @@
 
     <title><?= $data['judul']; ?></title>
     
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/bs/scss/bootstrap.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/custom.css">
     <link rel="icon" href="<?= BASEURL; ?>/img/faviconn.png?v=1" type="image/x-icon">
 </head>

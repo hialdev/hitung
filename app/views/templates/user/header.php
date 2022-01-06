@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $data['judul']; ?></title>
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/bs/scss/bootstrap.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/custom.css">
     <link rel="shortcut icon" href="<?= BASEURL; ?>/img/faviconn.png" type="image/x-icon">
     <script src="http://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
